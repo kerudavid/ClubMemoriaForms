@@ -1,4 +1,5 @@
 ﻿using ClubMemoriaForms.BusinessBO;
+using ClubMemoriaForms.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace ClubMemoriaForms
             Application.SetCompatibleTextRenderingDefault(false);
             ClientePruebaBO clientePruebaBO = new ClientePruebaBO();
             string i = clientePruebaBO.GetParentId();
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }

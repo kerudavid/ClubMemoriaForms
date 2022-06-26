@@ -18,25 +18,17 @@ namespace ClubMemoriaForms.BusinessBO
         /// 
         /// </summary>
         /// <returns></returns>
-        public bool IsLoggedIn(LoginModel loginModel)
+        public List<LoginModel> IsLoggedIn(LoginModel loginModel)
         {
-            string query = $"SELECT * FROM Usuario WHERE usuario = '{loginModel.UserName}'"
-                +$"AND clave ='{loginModel.Password}'";
+            string query = $"SELECT * FROM Usuario WHERE usuario = '{loginModel.usuario}'"
+                +$"AND clave ='{loginModel.clave}'";
 
             List<LoginModel> loginModelList = new List<LoginModel>();
 
             //Las consultas siempre retornan el obtejo dentro de una lista.
             loginModelList = this.ObtenerListaSQL<LoginModel>(query).ToList();
 
-            //Valida que la lista contenga informacion
-
-            //En este caso si retorna, quiere decir que si encontró al usuario y
-            //puede proceder al sistema
-            if (loginModelList.Count>0)
-            {
-                return true;
-            }
-            return false;
+            return loginModelList;
         }
 
         /// <summary>
