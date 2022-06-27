@@ -19,7 +19,7 @@ namespace ClubMemoriaForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ClientePruebaBO clientePruebaBO = new ClientePruebaBO();
-            string i = clientePruebaBO.GetParentId();
+            //string i = clientePruebaBO.GetParentId();
             Application.Run(new Login());
         }
     }

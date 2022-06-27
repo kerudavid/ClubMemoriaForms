@@ -44,5 +44,16 @@ namespace ClubMemoriaForms.Properties {
                 return ((string)(this["DataBaseConection"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source = DESKTOP-871AGIQ\\SQLEXPRESS; database =BCM;Trusted_Connection=true\" " +
+            "")]
+        public string conexionDB {
+            get {
+                return ((string)(this["conexionDB"]));
+            }
+        }
     }
 }

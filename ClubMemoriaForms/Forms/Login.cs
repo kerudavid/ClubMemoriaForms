@@ -67,7 +67,7 @@ namespace ClubMemoriaForms.Forms
                 //Navego a la siguiente pagina
                 // Envío el Id del Padre al FormHome                        
                 this.Hide();
-                Home home = new Home();
+                HomeForm home = new HomeForm();
                 home.Show();
 
 
