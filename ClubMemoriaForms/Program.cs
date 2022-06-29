@@ -18,8 +18,8 @@ namespace ClubMemoriaForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ClientePruebaBO clientePruebaBO = new ClientePruebaBO();
-            //string i = clientePruebaBO.GetParentId();
+            AsistenciaBO clientePruebaBO = new AsistenciaBO();
+            var i = clientePruebaBO.ConsultarPeriodoAsis("26/06/2022","28/06/2022");
             Application.Run(new Login());
         }
     }
